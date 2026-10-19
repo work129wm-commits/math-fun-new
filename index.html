@@ -16,7 +16,7 @@
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id);
-const SUPABASE_URL='https://phgwgylzltbsqlgvfut.supabase.co';
+const SUPABASE_URL='https://phgwgylzlitbsqlgvfut.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_TFKwpa-yQlhzVMd1wlWjQw_oj_KGP0g';
 const sb=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 let role='student',me=null,activePage='home',activeStudentId=null,chatChannel=null,toastTimer=0,cache={announcements:[],resources:[],tasks:[],grades:[],students:[],messages:[]};
