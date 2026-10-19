@@ -17,7 +17,7 @@
 (()=>{'use strict';
 const $=id=>document.getElementById(id);
 const SUPABASE_URL='https://phgwgylzlitbsqlgvfut.supabase.co';
-const SUPABASE_PUBLISHABLE_KEY='sb_publishable_TFKwpa-yQlhzVMd1wlWjQw_oj_KGP0g';
+const SUPABASE_PUBLISHABLE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBoZ3dneWx6bGl0YnNxbGd2ZnV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA1MTQ1MDgsImV4cCI6MjEwNjA5MDUwOH0.0KYh6hu0S92JI5HBhhGeOnnyT3lTU7cYFzAcs3WQwSs';
 const sb=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 let role='student',me=null,activePage='home',activeStudentId=null,chatChannel=null,toastTimer=0,cache={announcements:[],resources:[],tasks:[],grades:[],students:[],messages:[]};
 const studentNav=[['home','⌂','الرئيسية'],['library','▧','مكتبة الأستاذ'],['group','♡','قروب الطالبات'],['teacherChat','✉','مراسلة الأستاذ'],['announcements','🔔','التنبيهات'],['tasks','✎','الواجبات'],['grades','✧','درجاتي']];
